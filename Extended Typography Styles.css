@@ -358,6 +358,10 @@ settings:
 
 /* Body Text Styling */
 .markdown-preview-view p,
+.markdown-preview-view table,
+.markdown-preview-view ul,
+.markdown-preview-view ol,
+.markdown-preview-view .callout-title-inner,
 .markdown-rendered p,
 .markdown-source-view .cm-content{
   font-family: var(--ets-body-font-selection) !important;
