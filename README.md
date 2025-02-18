@@ -25,6 +25,9 @@ Each value is a multiplier based on your chosen font size in the Obsidian Appear
 **Font Weight**
 Default is 400. Some fonts will change more than others. Variable fonts work the best.
 
+**Spacing**
+Can adjust Word Spacing, Tracking (Letter Spacing) and Leading (Line Spacing)
+
 **Figures**
 Use the drop down box to change between default, Proportional Lining, Proportional Oldstyle, Tabular Lining, and Tabular old style figures.
 Some fonts will see more change than others.
