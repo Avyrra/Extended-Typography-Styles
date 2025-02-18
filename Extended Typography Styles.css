@@ -145,12 +145,15 @@ settings:
     type: variable-number
     default: 1.15
 
+
 # Font Weight
 -
     id: ets-font-weight-section-header
     title: Font Weight
-    description: Set Font Weightsudo apt install code
-
+    description: Set Font Weight
+    type: heading
+    level: 1
+    collapsed: true
 -
     id: ets-inline-title-weight-selection
     title: Inline Title
