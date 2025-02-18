@@ -294,7 +294,7 @@ settings:
 -
     id: ets-word-spacing-header
     title: Word Spacing
-    description: Adjust spacing between words
+    description: Adjust spacing between words | note- header inheritance can be removed by adjusting header spacing
     type: heading
     level: 2
     collapsed: true
@@ -307,7 +307,7 @@ settings:
     format: rem
     min: -1
     max: 1
-    step: 0.01
+    step: 0.05
 
 -
     id: ets-inline-title-word-spacing-selection
@@ -317,7 +317,7 @@ settings:
     format: rem
     min: -1
     max: 1
-    step: 0.01
+    step: 0.05
 
 -
     id: ets-header-word-spacing-selection
@@ -327,7 +327,7 @@ settings:
     format: rem
     min: -1
     max: 1
-    step: 0.01
+    step: 0.05
 
 ## Tracking (Letter Spacing)
 
