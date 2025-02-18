@@ -820,16 +820,17 @@ settings:
   }  
 }
 
-.ets-link-color-decorations-toggle .markdown-preview-view a,
-.ets-link-color-decorations-toggle .markdown-rendered .internal-link,
-.ets-link-color-decorations-toggle .cm-s-obsidian a,
-.ets-link-color-decorations-toggle .cm-s-obsidian span.cm-hmd-internal-link,
-.ets-link-color-decorations-toggle .markdown-source-view a,
-.ets-link-color-decorations-toggle .markdown-source-view .cm-link,
-.ets-link-color-decorations-toggle .markdown-source-view .cm-url,
-.ets-link-color-decorations-toggle .markdown-source-view .cm-hmd-internal-link {
+.ets-link-color-decorations-toggle .markdown-preview-view a:not(.tag),
+.ets-link-color-decorations-toggle .markdown-rendered .internal-link:not(.tag),
+.ets-link-color-decorations-toggle .cm-s-obsidian a:not(.tag),
+.ets-link-color-decorations-toggle .cm-s-obsidian span.cm-hmd-internal-link:not(.tag),
+.ets-link-color-decorations-toggle .markdown-source-view a:not(.tag),
+.ets-link-color-decorations-toggle .markdown-source-view .cm-link:not(.tag),
+.ets-link-color-decorations-toggle .markdown-source-view .cm-url:not(.tag),
+.ets-link-color-decorations-toggle .markdown-source-view .cm-hmd-internal-link:not(.tag) {
   color: var(--ets-link-color) !important;
 }
+
 
 
 /*Other*/
