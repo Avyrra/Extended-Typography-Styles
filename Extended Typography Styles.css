@@ -203,81 +203,6 @@ settings:
     type: variable-number
     default: 400
 
-# Figures
--
-    id: ets-figures-section-header
-    title: Figures
-    description: Set Figures Styles
-    type: heading
-    level: 1
-    collapsed: true
-
--
-    id: ets-body-figures-selection
-    title: Body Figure Style
-    type: variable-select
-    default: normal normal
-    options:
-        -
-            label: Default
-            value: normal normal
-        -
-            label: Proportional Lining
-            value: lining-nums proportional-nums
-        -
-            label: Proportional Oldstyle
-            value: oldstyle-nums proportional-nums
-        -
-            label: Tabular Lining
-            value: lining-nums tabular-nums
-        -
-            label: Tabular Oldstyle
-            value: oldstyle-nums tabular-nums
-
--
-    id: ets-inline-title-figures-selection
-    title: Inline Title Figure Style
-    type: variable-select
-    default: normal normal
-    options:
-        -
-            label: Default
-            value: normal normal
-        -
-            label: Proportional Lining
-            value: lining-nums proportional-nums
-        -
-            label: Proportional Oldstyle
-            value: oldstyle-nums proportional-nums
-        -
-            label: Tabular Lining
-            value: lining-nums tabular-nums
-        -
-            label: Tabular Oldstyle
-            value: oldstyle-nums tabular-nums
-
--
-    id: ets-header-figures-selection
-    title: Header Figure Style
-    type: variable-select
-    default: normal normal
-    options:
-        -
-            label: Default
-            value: normal normal
-        -
-            label: Proportional Lining
-            value: lining-nums proportional-nums
-        -
-            label: Proportional Oldstyle
-            value: oldstyle-nums proportional-nums
-        -
-            label: Tabular Lining
-            value: lining-nums tabular-nums
-        -
-            label: Tabular Oldstyle
-            value: oldstyle-nums tabular-nums
-
 # Spacing
 
 -
@@ -390,6 +315,119 @@ settings:
     step: 0.1
 
 
+## Baseline
+-
+    id: ets-baseline-spacing-header
+    title: Baseline
+    description: Adjust text overall vertical position
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-body-baseline-selection
+    title: Body
+    type: variable-number-slider
+    default: 0
+    format: px
+    min: -10
+    max: 10
+    step: 1
+
+-
+    id: ets-inline-title-baseline-selection
+    title: Inline Title
+    type: variable-number-slider
+    default: 0
+    format: px
+    min: -10
+    max: 10
+    step: 1
+-
+    id: ets-header-baseline-selection
+    title: Header
+    type: variable-number-slider
+    default: 0
+    format: px
+    min: -10
+    max: 10
+    step: 1
+
+
+# Figures
+-
+    id: ets-figures-section-header
+    title: Figures
+    description: Set Figures Styles
+    type: heading
+    level: 1
+    collapsed: true
+
+-
+    id: ets-body-figures-selection
+    title: Body Figure Style
+    type: variable-select
+    default: normal normal
+    options:
+        -
+            label: Default
+            value: normal normal
+        -
+            label: Proportional Lining
+            value: lining-nums proportional-nums
+        -
+            label: Proportional Oldstyle
+            value: oldstyle-nums proportional-nums
+        -
+            label: Tabular Lining
+            value: lining-nums tabular-nums
+        -
+            label: Tabular Oldstyle
+            value: oldstyle-nums tabular-nums
+
+-
+    id: ets-inline-title-figures-selection
+    title: Inline Title Figure Style
+    type: variable-select
+    default: normal normal
+    options:
+        -
+            label: Default
+            value: normal normal
+        -
+            label: Proportional Lining
+            value: lining-nums proportional-nums
+        -
+            label: Proportional Oldstyle
+            value: oldstyle-nums proportional-nums
+        -
+            label: Tabular Lining
+            value: lining-nums tabular-nums
+        -
+            label: Tabular Oldstyle
+            value: oldstyle-nums tabular-nums
+
+-
+    id: ets-header-figures-selection
+    title: Header Figure Style
+    type: variable-select
+    default: normal normal
+    options:
+        -
+            label: Default
+            value: normal normal
+        -
+            label: Proportional Lining
+            value: lining-nums proportional-nums
+        -
+            label: Proportional Oldstyle
+            value: oldstyle-nums proportional-nums
+        -
+            label: Tabular Lining
+            value: lining-nums tabular-nums
+        -
+            label: Tabular Oldstyle
+            value: oldstyle-nums tabular-nums
 
 # Colors
 -
@@ -455,16 +493,52 @@ settings:
     opacity: false
     default-light: '#5A7D96'
     default-dark: '#5A7D96'
-*/
 
-/*
-------- Extended Typography Styles --------
-Copyright (C) 2025 Avyrra
+# Other
+-
+    id: ets-other-header
+    title: Other
+    type: heading
+    level: 1
+    collapsed: true
 
-This software is licensed under the MIT License.
-You are free to use, modify, and distribute this work,
-provided that the above copyright notice and this
-permission notice are included in all copies.
+-
+    id: ets-highlight-styling-header
+    title: Highlight Styling
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-highlight-hpadding-select
+    title: Horizontal Padding
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: 0
+    max: 1
+    step: 0.01
+
+-
+    id: ets-highlight-vpadding-select
+    title: Vertical Padding
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: 0
+    max: 1
+    step: 0.01
+
+-
+    id: ets-highlight-radius-select
+    title: Border Radius
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: 0
+    max: 1
+    step: 0.01
+
 */
 
 :root {
@@ -516,6 +590,14 @@ permission notice are included in all copies.
     --ets-inline-title-tracking-selection: 0rem;
     --ets-header-tracking-selection: 0rem;
     --ets-leading-selection: 1.6rem;
+
+    --ets-body-baseline-selection: 0px;
+    --ets-inline-title-baseline-selection: 0px;
+    --ets-header-baseline-selection: 0px;
+
+    --ets-highlight-hpadding-select: 0rem;
+    --ets-highlight-vpadding-select: 0rem;
+    --ets-highlight-radius-select: 0rem;
 }
 
 /* Body Text Styling */
@@ -532,6 +614,8 @@ permission notice are included in all copies.
   word-spacing: var(--ets-body-word-spacing-selection) !important;
   letter-spacing: var(--ets-body-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
+  position: relative;
+  top: var(--ets-body-baseline-selection);
 }
 
 /* Inline Title */
@@ -544,6 +628,8 @@ permission notice are included in all copies.
   font-variant-numeric: var(--ets-inline-title-figures-selection) !important;
   word-spacing: var(--ets-inline-title-word-spacing-selection) !important;
   letter-spacing: var(--ets-inline-title-tracking-selection) !important;
+  position: relative;
+  top: var(--ets-inline-title-baseline-selection);
 }
 
 /* Header 1 */
@@ -557,6 +643,8 @@ permission notice are included in all copies.
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
+  position: relative;
+  top: var(--ets-header-baseline-selection);
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h1,
@@ -577,6 +665,8 @@ permission notice are included in all copies.
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
+  position: relative;
+  top: var(--ets-body-baseline-selection);
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h2,
@@ -597,6 +687,8 @@ permission notice are included in all copies.
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
+  position: relative;
+  top: var(--ets-body-baseline-selection);
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h3,
@@ -617,6 +709,8 @@ permission notice are included in all copies.
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
+  position: relative;
+  top: var(--ets-body-baseline-selection);
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h4,
@@ -637,6 +731,8 @@ permission notice are included in all copies.
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
+  position: relative;
+  top: var(--ets-body-baseline-selection);
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h5,
@@ -657,6 +753,8 @@ permission notice are included in all copies.
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
+  position: relative;
+  top: var(--ets-body-baseline-selection);
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h6,
@@ -693,4 +791,15 @@ permission notice are included in all copies.
     text-decoration: line-through;
     text-decoration-color: var(--ets-strikethrough-color) !important;
   }  
+}
+
+/*Other*/
+
+/* Highlight Styling */
+span.cm-highlight, mark {
+	padding-left: var(--ets-highlight-hpadding-select) !important;
+	padding-right: var(--ets-highlight-hpadding-select) !important;
+	padding-top: var(--ets-highlight-vpadding-select) !important;
+	padding-bottom: var(--ets-highlight-vpadding-select) !important;
+	border-radius: var(--ets-highlight-radius-select) !important;
 }
