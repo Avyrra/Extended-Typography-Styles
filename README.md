@@ -1,7 +1,7 @@
 # Extended-Typography-Styles
 Allows more control of typography styles in Obsidian when using the Style Settings community plugin.
 
-# HOW TO INSTALL
+## HOW TO INSTALL
 
 Open your Obsidian snippets folder via VaultName>.obsidian>snippets
 or by clicking the folder icon in the appearance menu within the Obsidian options menu.
@@ -12,7 +12,7 @@ Make sure "Style Settings" is installed and enabled via Obsidian Community plugi
 Extended Typography styles will appear within the new Style Settings menu.
 
 
-# HOW TO USE
+## HOW TO USE
 
 **Font Selection**
 Type the name of any font you have installed on your device.
