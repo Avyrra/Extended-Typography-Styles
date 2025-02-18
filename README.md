@@ -9,7 +9,19 @@ Download **Extended Typography Styles.css**
 
 A new menu will appear in settings called Style Settings. All Extended Typography Parameters will then be accessible from that menu.
 
+## Features
+- Font Selection: For Body, Inline Title, and Header
+- Additional option for separate fonts for all header types
+- Font size: All sizes listed are a multiplier of your base font from the appearance settings menu
+- Font Weight: To make your fonts thicc
+- Word Spacing
+- Tracking (Letter Spacing)
+- Leading (Line Spacing)
+- Baseline Spacing: Moves all text vertically. Useful if your text doesn't line up neatly with your theme elements
+- Figures: For Body, Inline Title, and Header. Select between Default, Proportional or Tabular Width, and Lining or Oldstyle character style.
+- Color Decorations: To color various elements such as bold, italics, etc. Toggles if you don't want em.
+- Additional options in other category: Maybe I'll sort them, maybe I won't, but right now it's just got Highlight settings and a Link Underline Toggle.
 
-### Note
+## Note
 Parameter defaults and limitations are set by me. If the limitations are too restrictive for your tastes, you can edit them via the css file.
 For best experience, ensure that all changes are made to both that YAML section and the CSS sections of the file.
