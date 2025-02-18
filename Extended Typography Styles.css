@@ -401,31 +401,60 @@ settings:
     collapsed: true
 
 -
-    id: ets-use-color-decorations-toggle
-    title: Use Color Decorations
-    description: note to user - click restore default buttons if initial color preview is inaccurate.
+    id: ets-bold-color-decorations-toggle
+    title: Bold Color
+    type: class-toggle
+
+-
+    id: ets-italics-color-decorations-toggle
+    title: Italics Color
+    type: class-toggle
+
+-
+    id: ets-highlight-color-decorations-toggle
+    title: Highlight Color
+    type: class-toggle
+
+-
+    id: ets-strikethrough-color-decorations-toggle
+    title: Strikethrough Color
     type: class-toggle
 
 -
     id: ets-bold-color
     title: Bold
-    type: variable-color
-    default: '#B44B4B'
+    type: variable-themed-color
     format: 'hex'
+    opacity: false
+    default-light: '#B44B4B'
+    default-dark: '#B44B4B'
 
 -
     id: ets-italics-color
     title: Italics
-    type: variable-color
-    default: '#4BB45D'
+    type: variable-themed-color
     format: 'hex'
+    opacity: false
+    default-light: '#4BB45D'
+    default-dark: '#4BB45D'
 
 -
     id: ets-highlight-color
     title: Highlight
-    type: variable-color
-    default: '#887233'
+    type: variable-themed-color   
     format: 'hex'
+    opacity: false
+    default-light: '#887233'
+    default-dark: '#887233'
+
+-
+    id: ets-strikethrough-color
+    title: Strikethrough
+    type: variable-themed-color   
+    format: 'hex'
+    opacity: false
+    default-light: '#5A7D96'
+    default-dark: '#5A7D96'
 */
 
 /*
@@ -474,9 +503,14 @@ permission notice are included in all copies.
     --ets-header-figures-selection: normal normal;
 
     /*--ets-use-color-decorations-toggle*/
+    /*--ets-bold-color-decorations-toggle*/
+    /*--ets-italics-color-decorations-toggle*/
+    /*--ets-highlight-color-decorations-toggle*/
+    /*--ets-strikethrough-color-decorations-toggle*/
     --ets-bold-color: #B44B4B;
     --ets-italics-color: #4BB45D;
     --ets-highlight-color: #F2D687;
+    --ets-strikethrough-color: #5A7D96;
 
     --ets-body-tracking-selection: 0rem;
     --ets-inline-title-tracking-selection: 0rem;
@@ -634,17 +668,29 @@ permission notice are included in all copies.
 
 
 /* Color Decorations */
-.ets-use-color-decorations-toggle {
+.ets-bold-color-decorations-toggle {
   strong, .cm-strong {
     color: var(--ets-bold-color) !important;
   }
+}
 
+.ets-italics-color-decorations-toggle {
   em, .cm-em {
     color: var(--ets-italics-color) !important;
   }
+}
 
+.ets-highlight-color-decorations-toggle {
   mark, .cm-highlight {
     background-color: var(--ets-highlight-color) !important;
     color: inherit !important;
   }
+}
+
+.ets-strikethrough-color-decorations-toggle {
+  s, del, .cm-strikethrough {
+    color: var(--ets-strikethrough-color) !important;
+    text-decoration: line-through;
+    text-decoration-color: var(--ets-strikethrough-color) !important;
+  }  
 }
