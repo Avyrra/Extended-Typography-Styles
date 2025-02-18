@@ -149,16 +149,7 @@ settings:
 -
     id: ets-font-weight-section-header
     title: Font Weight
-    description: Set Font Weight
-    type: heading
-    level: 1
-    collapsed: true
-
--
-    id: ets-body-weight-selection
-    title: Body
-    type: variable-number
-    default: 400
+    description: Set Font Weightsudo apt install code
 
 -
     id: ets-inline-title-weight-selection
@@ -277,6 +268,119 @@ settings:
             label: Tabular Oldstyle
             value: oldstyle-nums tabular-nums
 
+# Spacing
+
+-
+    id: ets-spacing-header
+    title: Spacing
+    description: Adjust Word Spacing, Tracking, and Leading
+    type: heading
+    level: 1
+    collapsed: true
+
+
+## Word Spacing
+
+-
+    id: ets-word-spacing-header
+    title: Word Spacing
+    description: Adjust spacing between words
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-body-word-spacing-selection
+    title: Body Word Spacing
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: -1
+    max: 1
+    step: 0.01
+
+-
+    id: ets-inline-title-word-spacing-selection
+    title: Inline Title Word Spacing
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: -1
+    max: 1
+    step: 0.01
+
+-
+    id: ets-header-word-spacing-selection
+    title: Header Word Spacing
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: -1
+    max: 1
+    step: 0.01
+
+## Tracking (Letter Spacing)
+
+-
+    id: ets-tracking-header
+    title: Tracking
+    description: Adjust space between letters
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-body-tracking-selection
+    title: Body Tracking
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: -0.25
+    max: 0.5
+    step: 0.01
+
+-
+    id: ets-inline-title-tracking-selection
+    title: Inline Title Tracking
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: -0.25
+    max: 0.5
+    step: 0.01
+
+-
+    id: ets-header-tracking-selection
+    title: Header Tracking
+    type: variable-number-slider
+    default: 0
+    format: rem
+    min: -0.25
+    max: 0.5
+    step: 0.01
+
+
+## Leading (Line Spacing)
+-
+    id: ets-line-spacing-header
+    title: Leading
+    description: Adjust space between lines
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-leading-selection
+    title: Leading
+    type: variable-number-slider
+    default: 1.6
+    format: rem
+    min: 0
+    max: 3
+    step: 0.1
+
+
+
 # Colors
 -
     id: ets-colors-header
@@ -314,13 +418,22 @@ settings:
     format: 'hex'
 */
 
+/*
+------- Extended Typography Styles --------
+Copyright (C) 2025 Avyrra
 
-:root { 
+This software is licensed under the MIT License.
+You are free to use, modify, and distribute this work,
+provided that the above copyright notice and this
+permission notice are included in all copies.
+*/
+
+:root {
     /*Variables*/
     --ets-body-font-selection: Noto Sans;
     --ets-inline-title-font-selection: Noto Sans;
     --ets-header-font-selection: Noto Sans;
-    
+
     /*--ets-use-separate-header-toggle*/
     --ets-separate-header1-font-selection: Noto Sans;
     --ets-separate-header2-font-selection: Noto Sans;
@@ -328,7 +441,7 @@ settings:
     --ets-separate-header4-font-selection: Noto Sans;
     --ets-separate-header5-font-selection: Noto Sans;
     --ets-separate-header6-font-selection: Noto Sans;
-    
+
     --ets-inline-title-size-selection: 2.50;
     --ets-header1-size-selection: 1.75;
     --ets-header2-size-selection: 1.50;
@@ -336,7 +449,7 @@ settings:
     --ets-header4-size-selection: 1.25;
     --ets-header5-size-selection: 1.20;
     --ets-header6-size-selection: 1.15;
-    
+
     --ets-body-weight-selection: 400;
     --ets-inline-title-weight-selection: 400;
     --ets-header1-weight-selection: 400;
@@ -345,15 +458,26 @@ settings:
     --ets-header4-weight-selection: 400;
     --ets-header5-weight-selection: 400;
     --ets-header6-weight-selection: 400;
-    
+
     --ets-body-figures-selection: normal normal;
     --ets-inline-title-figures-selection: normal normal;
     --ets-header-figures-selection: normal normal;
-    
+
     /*--ets-use-color-decorations-toggle*/
     --ets-bold-color: #B44B4B;
     --ets-italics-color: #4BB45D;
     --ets-highlight-color: #F2D687;
+
+    /* Spacing Variables */
+    --ets-body-word-spacing-selection: 0rem;
+    --ets-inline-title-word-spacing-selection: 0rem;
+    --ets-header-word-spacing-selection: 0rem;
+
+    --ets-body-tracking-selection: 1;
+    --ets-inline-title-tracking-selection: 1;
+    --ets-header-tracking-selection: 1;
+
+    --ets-leading-selection: 1.6rem;
 }
 
 /* Body Text Styling */
@@ -367,6 +491,9 @@ settings:
   font-family: var(--ets-body-font-selection) !important;
   font-weight: var(--ets-body-weight-selection) !important;
   font-variant-numeric: var(--ets-body-figures-selection) !important;
+  word-spacing: var(--ets-body-word-spacing-selection) !important;
+  letter-spacing: var(--ets-body-tracking-selection) !important;
+  line-height: var(--ets-leading-selection) !important;
 }
 
 /* Inline Title */
@@ -377,6 +504,8 @@ settings:
   font-size: calc(1rem * var(--ets-inline-title-size-selection)) !important;
   font-weight: var(--ets-inline-title-weight-selection) !important;
   font-variant-numeric: var(--ets-inline-title-figures-selection) !important;
+  word-spacing: var(--ets-inline-title-word-spacing-selection) !important;
+  letter-spacing: var(--ets-inline-title-tracking-selection) !important;
 }
 
 /* Header 1 */
@@ -387,6 +516,9 @@ settings:
   font-size: calc(1rem * var(--ets-header1-size-selection)) !important;
   font-weight: var(--ets-header1-weight-selection) !important;
   font-variant-numeric: var(--ets-header-figures-selection) !important;
+  word-spacing: var(--ets-header-word-spacing-selection) !important;
+  letter-spacing: var(--ets-header-tracking-selection) !important;
+  line-height: var(--ets-leading-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h1,
@@ -404,6 +536,9 @@ settings:
   font-size: calc(1rem * var(--ets-header2-size-selection)) !important;
   font-weight: var(--ets-header2-weight-selection) !important;
   font-variant-numeric: var(--ets-header-figures-selection) !important;
+  word-spacing: var(--ets-header-word-spacing-selection) !important;
+  letter-spacing: var(--ets-header-tracking-selection) !important;
+  line-height: var(--ets-leading-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h2,
@@ -421,6 +556,9 @@ settings:
   font-size: calc(1rem * var(--ets-header3-size-selection)) !important;
   font-weight: var(--ets-header3-weight-selection) !important;
   font-variant-numeric: var(--ets-header-figures-selection) !important;
+  word-spacing: var(--ets-header-word-spacing-selection) !important;
+  letter-spacing: var(--ets-header-tracking-selection) !important;
+  line-height: var(--ets-leading-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h3,
@@ -438,6 +576,9 @@ settings:
   font-size: calc(1rem * var(--ets-header4-size-selection)) !important;
   font-weight: var(--ets-header4-weight-selection) !important;
   font-variant-numeric: var(--ets-header-figures-selection) !important;
+  word-spacing: var(--ets-header-word-spacing-selection) !important;
+  letter-spacing: var(--ets-header-tracking-selection) !important;
+  line-height: var(--ets-leading-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h4,
@@ -455,6 +596,9 @@ settings:
   font-size: calc(1rem * var(--ets-header5-size-selection)) !important;
   font-weight: var(--ets-header5-weight-selection) !important;
   font-variant-numeric: var(--ets-header-figures-selection) !important;
+  word-spacing: var(--ets-header-word-spacing-selection) !important;
+  letter-spacing: var(--ets-header-tracking-selection) !important;
+  line-height: var(--ets-leading-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h5,
@@ -472,6 +616,9 @@ settings:
   font-size: calc(1rem * var(--ets-header6-size-selection)) !important;
   font-weight: var(--ets-header6-weight-selection) !important;
   font-variant-numeric: var(--ets-header-figures-selection) !important;
+  word-spacing: var(--ets-header-word-spacing-selection) !important;
+  letter-spacing: var(--ets-header-tracking-selection) !important;
+  line-height: var(--ets-leading-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h6,
