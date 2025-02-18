@@ -459,6 +459,11 @@ settings:
     type: class-toggle
 
 -
+    id: ets-link-color-decorations-toggle
+    title: Link Color
+    type: class-toggle
+
+-
     id: ets-bold-color
     title: Bold
     type: variable-themed-color
@@ -494,6 +499,15 @@ settings:
     default-light: '#5A7D96'
     default-dark: '#5A7D96'
 
+-
+    id: ets-link-color
+    title: Links
+    type: variable-themed-color   
+    format: 'hex'
+    opacity: false
+    default-light: '#BE4190'
+    default-dark: '#BE4190'
+
 # Other
 -
     id: ets-other-header
@@ -501,6 +515,11 @@ settings:
     type: heading
     level: 1
     collapsed: true
+
+-
+    id: ets-disable-link-underline-select
+    title: Disable Link Underline
+    type: class-toggle
 
 -
     id: ets-highlight-styling-header
@@ -543,6 +562,8 @@ settings:
 
 :root {
     /*Variables*/
+    /*Some Variables are commented out to remind me that they're there from the yaml section, but they don't need to be defined here.*/
+
     --ets-body-font-selection: Noto Sans;
     --ets-inline-title-font-selection: Noto Sans;
     --ets-header-font-selection: Noto Sans;
@@ -581,10 +602,12 @@ settings:
     /*--ets-italics-color-decorations-toggle*/
     /*--ets-highlight-color-decorations-toggle*/
     /*--ets-strikethrough-color-decorations-toggle*/
+    /*--ets-link-color-decoration-toggle*/
     --ets-bold-color: #B44B4B;
     --ets-italics-color: #4BB45D;
     --ets-highlight-color: #F2D687;
     --ets-strikethrough-color: #5A7D96;
+    --ets-link-color: #BE4190;
 
     --ets-body-tracking-selection: 0rem;
     --ets-inline-title-tracking-selection: 0rem;
@@ -595,9 +618,13 @@ settings:
     --ets-inline-title-baseline-selection: 0px;
     --ets-header-baseline-selection: 0px;
 
+    /*ets-disable-link-underline*/
+
     --ets-highlight-hpadding-select: 0rem;
     --ets-highlight-vpadding-select: 0rem;
     --ets-highlight-radius-select: 0rem;
+
+    
 }
 
 /* Body Text Styling */
@@ -793,7 +820,32 @@ settings:
   }  
 }
 
+.ets-link-color-decorations-toggle .markdown-preview-view a,
+.ets-link-color-decorations-toggle .markdown-rendered .internal-link,
+.ets-link-color-decorations-toggle .cm-s-obsidian a,
+.ets-link-color-decorations-toggle .cm-s-obsidian span.cm-hmd-internal-link,
+.ets-link-color-decorations-toggle .markdown-source-view a,
+.ets-link-color-decorations-toggle .markdown-source-view .cm-link,
+.ets-link-color-decorations-toggle .markdown-source-view .cm-url,
+.ets-link-color-decorations-toggle .markdown-source-view .cm-hmd-internal-link {
+  color: var(--ets-link-color) !important;
+}
+
+
 /*Other*/
+
+/* Disable Link Underline */
+.ets-disable-link-underline-select .markdown-preview-view a,
+.ets-disable-link-underline-select .markdown-rendered .internal-link,
+.ets-disable-link-underline-select .cm-s-obsidian a,
+.ets-disable-link-underline-select .cm-s-obsidian span.cm-hmd-internal-link,
+.ets-disable-link-underline-select .markdown-source-view a,
+.ets-disable-link-underline-select .markdown-source-view .cm-link,
+.ets-disable-link-underline-select .markdown-source-view .cm-url,
+.ets-disable-link-underline-select .markdown-source-view .cm-hmd-internal-link {
+  text-decoration: none !important;
+}
+
 
 /* Highlight Styling */
 span.cm-highlight, mark {
