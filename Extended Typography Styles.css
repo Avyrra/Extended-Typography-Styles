@@ -468,15 +468,9 @@ permission notice are included in all copies.
     --ets-italics-color: #4BB45D;
     --ets-highlight-color: #F2D687;
 
-    /* Spacing Variables */
-    --ets-body-word-spacing-selection: 0rem;
-    --ets-inline-title-word-spacing-selection: 0rem;
-    --ets-header-word-spacing-selection: 0rem;
-
-    --ets-body-tracking-selection: 1;
-    --ets-inline-title-tracking-selection: 1;
-    --ets-header-tracking-selection: 1;
-
+    --ets-body-tracking-selection: 0rem;
+    --ets-inline-title-tracking-selection: 0rem;
+    --ets-header-tracking-selection: 0rem;
     --ets-leading-selection: 1.6rem;
 }
 
