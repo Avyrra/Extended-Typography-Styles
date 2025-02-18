@@ -154,6 +154,13 @@ settings:
     type: heading
     level: 1
     collapsed: true
+
+-
+    id: ets-body-weight-selection
+    title: Body
+    type: variable-number
+    default: 400
+
 -
     id: ets-inline-title-weight-selection
     title: Inline Title
