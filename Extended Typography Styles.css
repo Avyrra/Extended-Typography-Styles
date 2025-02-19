@@ -203,6 +203,60 @@ settings:
     type: variable-number
     default: 400
 
+
+## Bold Text
+
+-
+    id: ets-bold-weight-section-header
+    title: Bold Text
+    description: Set Weight for Bold Text
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-body-bold-weight-selection
+    title: Body
+    type: variable-number
+    default: 700
+
+-
+    id: ets-header1-bold-weight-selection
+    title: Header 1
+    type: variable-number
+    default: 700
+
+-
+    id: ets-header2-bold-weight-selection
+    title: Header 2
+    type: variable-number
+    default: 700
+
+-
+    id: ets-header3-bold-weight-selection
+    title: Header 3
+    type: variable-number
+    default: 700
+
+-
+    id: ets-header4-bold-weight-selection
+    title: Header 4
+    type: variable-number
+    default: 700
+
+-
+    id: ets-header5-bold-weight-selection
+    title: Header 5
+    type: variable-number
+    default: 700
+
+-
+    id: ets-header6-bold-weight-selection
+    title: Header 6
+    type: variable-number
+    default: 700
+
+
 # Spacing
 
 -
@@ -593,6 +647,15 @@ settings:
     --ets-header5-weight-selection: 400;
     --ets-header6-weight-selection: 400;
 
+    --ets-body-bold-weight-selection: 700;
+    --ets-header1-bold-weight-selection: 700;
+    --ets-header2-bold-weight-selection: 700;
+    --ets-header3-bold-weight-selection: 700;
+    --ets-header4-bold-weight-selection: 700;
+    --ets-header5-bold-weight-selection: 700;
+    --ets-header6-bold-weight-selection: 700;
+
+
     --ets-body-figures-selection: normal normal;
     --ets-inline-title-figures-selection: normal normal;
     --ets-header-figures-selection: normal normal;
@@ -641,8 +704,8 @@ settings:
   word-spacing: var(--ets-body-word-spacing-selection) !important;
   letter-spacing: var(--ets-body-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
-  position: relative;
-  top: var(--ets-body-baseline-selection);
+  position: relative; !important;
+  top: var(--ets-body-baseline-selection); !important;
 }
 
 /* Inline Title */
@@ -655,8 +718,8 @@ settings:
   font-variant-numeric: var(--ets-inline-title-figures-selection) !important;
   word-spacing: var(--ets-inline-title-word-spacing-selection) !important;
   letter-spacing: var(--ets-inline-title-tracking-selection) !important;
-  position: relative;
-  top: var(--ets-inline-title-baseline-selection);
+  position: relative; !important;
+  top: var(--ets-inline-title-baseline-selection); !important;
 }
 
 /* Header 1 */
@@ -670,8 +733,8 @@ settings:
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
-  position: relative;
-  top: var(--ets-header-baseline-selection);
+  position: relative; !important;
+  top: var(--ets-header-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h1,
@@ -692,8 +755,8 @@ settings:
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
-  position: relative;
-  top: var(--ets-body-baseline-selection);
+  position: relative; !important;
+  top: var(--ets-body-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h2,
@@ -714,8 +777,8 @@ settings:
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
-  position: relative;
-  top: var(--ets-body-baseline-selection);
+  position: relative; !important;
+  top: var(--ets-body-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h3,
@@ -736,8 +799,8 @@ settings:
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
-  position: relative;
-  top: var(--ets-body-baseline-selection);
+  position: relative; !important;
+  top: var(--ets-body-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h4,
@@ -758,8 +821,8 @@ settings:
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
-  position: relative;
-  top: var(--ets-body-baseline-selection);
+  position: relative; !important;
+  top: var(--ets-body-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h5,
@@ -780,8 +843,8 @@ settings:
   word-spacing: var(--ets-header-word-spacing-selection) !important;
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
-  position: relative;
-  top: var(--ets-body-baseline-selection);
+  position: relative; !important;
+  top: var(--ets-body-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h6,
@@ -790,6 +853,94 @@ settings:
     font-family: var(--ets-separate-header6-font-selection) !important;
   }
 }
+
+
+
+
+
+
+/* Bold Text */
+/*Body*/
+.markdown-preview-view p strong,
+.markdown-preview-view p b,
+.markdown-rendered p strong,
+.markdown-rendered p b,
+.markdown-source-view .cm-strong {
+  font-weight: var(--ets-body-bold-weight-selection) !important;
+}
+
+/*Header 1 Bold*/
+.markdown-preview-view h1 strong,
+.markdown-preview-view h1 b,
+.markdown-rendered h1 strong,
+.markdown-rendered h1 b,
+.markdown-source-view .cm-header-1 .cm-strong,
+.markdown-source-view .cm-header-1 .cm-formatting-strong,
+.markdown-source-view .HyperMD-header-1 .cm-strong,
+.markdown-source-view .HyperMD-header-1 .cm-formatting-strong {
+  font-weight: var(--ets-header1-bold-weight-selection) !important;
+}
+
+/* Header 2 Bold */
+.markdown-preview-view h2 strong,
+.markdown-preview-view h2 b,
+.markdown-rendered h2 strong,
+.markdown-rendered h2 b,
+.markdown-source-view .cm-header-2 .cm-strong,
+.markdown-source-view .cm-header-2 .cm-formatting-strong,
+.markdown-source-view .HyperMD-header-2 .cm-strong,
+.markdown-source-view .HyperMD-header-2 .cm-formatting-strong {
+  font-weight: var(--ets-header2-bold-weight-selection) !important;
+}
+
+/* Header 3 Bold */
+.markdown-preview-view h3 strong,
+.markdown-preview-view h3 b,
+.markdown-rendered h3 strong,
+.markdown-rendered h3 b,
+.markdown-source-view .cm-header-3 .cm-strong,
+.markdown-source-view .cm-header-3 .cm-formatting-strong,
+.markdown-source-view .HyperMD-header-3 .cm-strong,
+.markdown-source-view .HyperMD-header-3 .cm-formatting-strong {
+  font-weight: var(--ets-header3-bold-weight-selection) !important;
+}
+
+/* Header 4 Bold */
+.markdown-preview-view h4 strong,
+.markdown-preview-view h4 b,
+.markdown-rendered h4 strong,
+.markdown-rendered h4 b,
+.markdown-source-view .cm-header-4 .cm-strong,
+.markdown-source-view .cm-header-4 .cm-formatting-strong,
+.markdown-source-view .HyperMD-header-4 .cm-strong,
+.markdown-source-view .HyperMD-header-4 .cm-formatting-strong {
+  font-weight: var(--ets-header4-bold-weight-selection) !important;
+}
+
+/* Header 5 Bold */
+.markdown-preview-view h5 strong,
+.markdown-preview-view h5 b,
+.markdown-rendered h5 strong,
+.markdown-rendered h5 b,
+.markdown-source-view .cm-header-5 .cm-strong,
+.markdown-source-view .cm-header-5 .cm-formatting-strong,
+.markdown-source-view .HyperMD-header-5 .cm-strong,
+.markdown-source-view .HyperMD-header-5 .cm-formatting-strong {
+  font-weight: var(--ets-header5-bold-weight-selection) !important;
+}
+
+/* Header 6 Bold */
+.markdown-preview-view h6 strong,
+.markdown-preview-view h6 b,
+.markdown-rendered h6 strong,
+.markdown-rendered h6 b,
+.markdown-source-view .cm-header-6 .cm-strong,
+.markdown-source-view .cm-header-6 .cm-formatting-strong,
+.markdown-source-view .HyperMD-header-6 .cm-strong,
+.markdown-source-view .HyperMD-header-6 .cm-formatting-strong {
+  font-weight: var(--ets-header6-bold-weight-selection) !important;
+}
+
 
 
 /* Color Decorations */
@@ -830,6 +981,8 @@ settings:
 .ets-link-color-decorations-toggle .markdown-source-view .cm-hmd-internal-link:not(.tag) {
   color: var(--ets-link-color) !important;
 }
+
+
 
 
 
