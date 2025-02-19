@@ -14,6 +14,7 @@ A new menu will appear in settings called Style Settings. All Extended Typograph
   - Additional option for separate fonts for all header types
 - **Font size:** All sizes listed are a multiplier of your base font from the appearance settings menu
 - **Font Weight:** To make your fonts thicc
+  - **Bold Text:** If you like your bold text extra thicc
 - **Word Spacing**
 - **Tracking** (Letter Spacing)
 - **Leading** (Line Spacing)
