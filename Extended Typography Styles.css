@@ -704,9 +704,23 @@ settings:
   word-spacing: var(--ets-body-word-spacing-selection) !important;
   letter-spacing: var(--ets-body-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
-  position: relative; !important;
-  top: var(--ets-body-baseline-selection); !important;
 }
+
+/*Baseline Fix to avoid Headers*/
+.markdown-preview-view :is(p, table, ul, ol, .callout-title-inner):not(:is(h1, h2, h3, h4, h5, h6)),
+.markdown-rendered :is(p, table, ul, ol, .callout-title-inner):not(:is(h1, h2, h3, h4, h5, h6)) {
+  position: relative;
+  top: var(--ets-body-baseline-selection);
+}
+
+/* I don't know why it makes me separate this fuckin line */
+.markdown-source-view .cm-content > .cm-line:not([class*="header"]) {
+  position: relative;
+  top: var(--ets-body-baseline-selection);
+}
+
+
+
 
 /* Inline Title */
 .markdown-preview-view .inline-title,
@@ -756,7 +770,7 @@ settings:
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
-  top: var(--ets-body-baseline-selection); !important;
+  top: var(--ets-header-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h2,
@@ -778,7 +792,7 @@ settings:
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
-  top: var(--ets-body-baseline-selection); !important;
+  top: var(--ets-header-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h3,
@@ -800,7 +814,7 @@ settings:
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
-  top: var(--ets-body-baseline-selection); !important;
+  top: var(--ets-header-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h4,
@@ -822,7 +836,7 @@ settings:
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
-  top: var(--ets-body-baseline-selection); !important;
+  top: var(--ets-header-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h5,
@@ -844,7 +858,7 @@ settings:
   letter-spacing: var(--ets-header-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
-  top: var(--ets-body-baseline-selection); !important;
+  top: var(--ets-header-baseline-selection); !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h6,
