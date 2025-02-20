@@ -724,7 +724,30 @@ settings:
 
 
 
+## Small Caps
 
+-
+    id: ets-small-caps-header
+    title: Small Caps
+    description: Toggle Small Caps - Looks best with supported OpenType fonts
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-body-small-caps-toggle
+    title: Body
+    type: class-toggle
+
+-
+    id: ets-inline-title-small-caps-toggle
+    title: Inline Title
+    type: class-toggle
+
+-
+    id: ets-header-small-caps-toggle
+    title: Header
+    type: class-toggle
 
 
 
@@ -985,8 +1008,22 @@ settings:
 }
 
 
+/*Small Caps for Body*/
+body.ets-body-small-caps-toggle .markdown-preview-view p,
+body.ets-body-small-caps-toggle .markdown-preview-view table,
+body.ets-body-small-caps-toggle .markdown-preview-view ul,
+body.ets-body-small-caps-toggle .markdown-preview-view ol,
+body.ets-body-small-caps-toggle .markdown-preview-view .callout-title-inner,
+body.ets-body-small-caps-toggle .markdown-rendered p,
+body.ets-body-small-caps-toggle .markdown-source-view .cm-content {
+  font-variant: small-caps;
+}
 
-W
+
+
+
+
+
 
 /* Inline Title */
 .markdown-preview-view .inline-title,
@@ -1002,6 +1039,17 @@ W
   top: var(--ets-inline-title-baseline-selection); !important;
   font-feature-settings: var(--ets-inline-title-stylistic-sets-selection) !important;
 }
+
+/*Small Caps for Inline Title*/
+body.ets-inline-title-small-caps-toggle .markdown-preview-view .inline-title,
+body.ets-inline-title-small-caps-toggle .markdown-rendered .inline-title,
+body.ets-inline-title-small-caps-toggle .markdown-source-view .inline-title {
+  font-variant: small-caps;
+}
+
+
+
+
 
 /* Header 1 */
 .markdown-preview-view h1,
@@ -1227,6 +1275,15 @@ W
 .markdown-source-view .HyperMD-header-6 .cm-formatting-strong {
   font-weight: var(--ets-header6-bold-weight-selection) !important;
 }
+
+
+/* Small Caps for Headers */
+body.ets-header-small-caps-toggle :is(.markdown-preview-view, .markdown-rendered) :is(h1, h2, h3, h4, h5, h6),
+body.ets-header-small-caps-toggle .markdown-source-view.mod-cm6 :is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+  font-variant: small-caps;
+}
+
+
 
 
 
