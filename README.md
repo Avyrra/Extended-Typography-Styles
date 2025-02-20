@@ -29,6 +29,7 @@ A new menu will appear in settings called Style Settings. All Extended Typograph
 - **OpenType Features**
   - **Figures:** For Body, Inline Title, and Header. Select between Default, Proportional or Tabular Width, and Lining or Oldstyle character style.
   - **Stylistic Sets:** Some fonts have stylistic sets that use different glyphs for some characters.
+  - **Small Caps:** Technically works with TrueType too, but it looks better if your OpenType font supports it
 - **Color Decorations:** To color various elements such as bold, italics, etc. Toggles if you don't want em.
 - **Additional options:** Maybe I'll sort them, maybe I won't
   - Link Underline Toggle
