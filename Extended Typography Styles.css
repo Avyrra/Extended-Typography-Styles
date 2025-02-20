@@ -273,7 +273,7 @@ settings:
 -
     id: ets-word-spacing-header
     title: Word Spacing
-    description: Adjust spacing between words | note- header inheritance can be removed by adjusting header spacing
+    description: Adjust spacing between words
     type: heading
     level: 2
     collapsed: true
@@ -313,7 +313,7 @@ settings:
 -
     id: ets-tracking-header
     title: Tracking
-    description: Adjust space between letters
+    description: Adjust space between letters. Some fonts may lose contextual alternates when this setting is used.
     type: heading
     level: 2
     collapsed: true
@@ -961,7 +961,6 @@ settings:
   font-family: var(--ets-body-font-selection) !important;
   font-weight: var(--ets-body-weight-selection) !important;
   font-variant-numeric: var(--ets-body-figures-selection) !important;
-  word-spacing: var(--ets-body-word-spacing-selection) !important;
   letter-spacing: var(--ets-body-tracking-selection) !important;
   line-height: var(--ets-leading-selection) !important;
 }
@@ -971,7 +970,9 @@ settings:
 .markdown-rendered :is(p, table, ul, ol, .callout-title-inner):not(:is(h1, h2, h3, h4, h5, h6)) {
   position: relative;
   top: var(--ets-body-baseline-selection);
+  word-spacing: var(--ets-body-word-spacing-selection) !important;
   font-feature-settings: var(--ets-body-stylistic-sets-selection) !important;
+
 }
 
 /* I don't know why it makes me separate this fuckin line */
@@ -979,13 +980,13 @@ settings:
 .markdown-source-view .cm-content > .cm-line:not([class*="header"]) {
   position: relative;
   top: var(--ets-body-baseline-selection);
+  word-spacing: var(--ets-body-word-spacing-selection) !important;
   font-feature-settings: var(--ets-body-stylistic-sets-selection) !important;
 }
 
 
 
-
-
+W
 
 /* Inline Title */
 .markdown-preview-view .inline-title,
