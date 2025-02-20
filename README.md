@@ -19,7 +19,9 @@ A new menu will appear in settings called Style Settings. All Extended Typograph
 - **Tracking** (Letter Spacing)
 - **Leading** (Line Spacing)
 - **Baseline Spacing:** Moves all text vertically. Useful if your text doesn't line up neatly with your theme elements
-- **Figures:** For Body, Inline Title, and Header. Select between Default, Proportional or Tabular Width, and Lining or Oldstyle character style.
+- **OpenType Features**
+  - **Figures:** For Body, Inline Title, and Header. Select between Default, Proportional or Tabular Width, and Lining or Oldstyle character style.
+  - **Stylistic Sets:** Some fonts have stylistic sets that use different glyphs for some characters.
 - **Color Decorations:** To color various elements such as bold, italics, etc. Toggles if you don't want em.
 - **Additional options:** Maybe I'll sort them, maybe I won't
   - Link Underline Toggle
@@ -28,3 +30,8 @@ A new menu will appear in settings called Style Settings. All Extended Typograph
 ## Note
 Parameter defaults and limitations are set by me. If the limitations are too restrictive for your tastes, you can edit them via the css file.
 For best experience, ensure that all changes are made to both that YAML section and the CSS sections of the file.
+
+## FAQ
+- **Can I use this in my-** Yes. Yes you can. The MIT Licenses permits you to basically do whatever you want with it. Just follow the rules in the License File. So if you want to rip all the code out and use it for another project, go ahead. Want to implement it into your theme? Go ahead.
+
+- **How can I support you and this project.** You can't. This is a personal project that I will probably forget about some day.
