@@ -1,6 +1,11 @@
 # Extended-Typography-Styles
 Allows more control of typography styles in Obsidian when using the Style Settings community plugin.
 
+## Examples
+![](images/FaerieandFantasie.png)
+![](images/SystemandStarlight.png)
+![](images/MoonlightandMasquerades.png)
+
 ## HOW TO INSTALL
 Download **Extended Typography Styles.css**
 - Open your Obsidian Vaults snippet folder. This folder can be accessed by clicking the folder icon at the bottom of the appearance menu or by navigating to vaultname/.obsidian/snippets
@@ -31,7 +36,10 @@ A new menu will appear in settings called Style Settings. All Extended Typograph
 Parameter defaults and limitations are set by me. If the limitations are too restrictive for your tastes, you can edit them via the css file.
 For best experience, ensure that all changes are made to both that YAML section and the CSS sections of the file.
 
+
+
 ## FAQ
 - **Can I use this in my-** Yes. Yes you can. The MIT Licenses permits you to basically do whatever you want with it. Just follow the rules in the License File. So if you want to rip all the code out and use it for another project, go ahead. Want to implement it into your theme? Go ahead.
 
 - **How can I support you and this project.** You can't. This is a personal project that I will probably forget about some day.
+
