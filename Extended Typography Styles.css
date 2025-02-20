@@ -408,13 +408,29 @@ settings:
     step: 1
 
 
-# Figures
+
+
+
+
+
+
+# Opentype Features
+
+-
+    id: ets-opentype-header
+    title: OpenType Features
+    description: Select unique options present in some OpenType fonts.
+    type: heading
+    level: 1
+    collapsed: true
+
+## Figures
 -
     id: ets-figures-section-header
     title: Figures
     description: Set Figures Styles
     type: heading
-    level: 1
+    level: 2
     collapsed: true
 
 -
@@ -483,6 +499,239 @@ settings:
             label: Tabular Oldstyle
             value: oldstyle-nums tabular-nums
 
+
+
+## Stylistic Sets
+
+-
+    id: ets-stylistic-sets-header
+    title: Stylistic Sets
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-body-stylistic-sets-selection
+    title: Body
+    type: variable-select
+    default: "\"ss00\""
+    options:
+    -
+        label: Default
+        value: "\"ss00\""
+    -
+        label: Set 1
+        value: "\"ss01\""
+    -
+        label: Set 2
+        value: "\"ss02\""
+    -
+        label: Set 3
+        value: "\"ss03\""
+    -
+        label: Set 4
+        value: "\"ss04\""
+    -
+        label: Set 5
+        value: "\"ss05\""
+    -
+        label: Set 6
+        value: "\"ss06\""
+    -
+        label: Set 7
+        value: "\"ss07\""
+    -
+        label: Set 8
+        value: "\"ss08\""
+    -
+        label: Set 9
+        value: "\"ss09\""
+    -
+        label: Set 10
+        value: "\"ss10\""
+    -
+        label: Set 11
+        value: "\"ss11\""
+    -
+        label: Set 12
+        value: "\"ss12\""
+    -
+        label: Set 13
+        value: "\"ss13\""
+    -
+        label: Set 14
+        value: "\"ss14\""
+    -
+        label: Set 15
+        value: "\"ss15\""
+    -
+        label: Set 16
+        value: "\"ss16\""
+    -
+        label: Set 17
+        value: "\"ss17\""
+    -
+        label: Set 18
+        value: "\"ss18\""
+    -
+        label: Set 19
+        value: "\"ss19\""
+    -
+        label: Set 20
+        value: "\"ss20\""
+
+
+-
+    id: ets-inline-title-stylistic-sets-selection
+    title: Inline Title
+    type: variable-select
+    default: "\"ss00\""
+    options:
+    -
+        label: Default
+        value: "\"ss00\""
+    -
+        label: Set 1
+        value: "\"ss01\""
+    -
+        label: Set 2
+        value: "\"ss02\""
+    -
+        label: Set 3
+        value: "\"ss03\""
+    -
+        label: Set 4
+        value: "\"ss04\""
+    -
+        label: Set 5
+        value: "\"ss05\""
+    -
+        label: Set 6
+        value: "\"ss06\""
+    -
+        label: Set 7
+        value: "\"ss07\""
+    -
+        label: Set 8
+        value: "\"ss08\""
+    -
+        label: Set 9
+        value: "\"ss09\""
+    -
+        label: Set 10
+        value: "\"ss10\""
+    -
+        label: Set 11
+        value: "\"ss11\""
+    -
+        label: Set 12
+        value: "\"ss12\""
+    -
+        label: Set 13
+        value: "\"ss13\""
+    -
+        label: Set 14
+        value: "\"ss14\""
+    -
+        label: Set 15
+        value: "\"ss15\""
+    -
+        label: Set 16
+        value: "\"ss16\""
+    -
+        label: Set 17
+        value: "\"ss17\""
+    -
+        label: Set 18
+        value: "\"ss18\""
+    -
+        label: Set 19
+        value: "\"ss19\""
+    -
+        label: Set 20
+        value: "\"ss20\""
+
+
+-
+    id: ets-header-stylistic-sets-selection
+    title: Header
+    type: variable-select
+    default: "\"ss00\""
+    options:
+    -
+        label: Default
+        value: "\"ss00\""
+    -
+        label: Set 1
+        value: "\"ss01\""
+    -
+        label: Set 2
+        value: "\"ss02\""
+    -
+        label: Set 3
+        value: "\"ss03\""
+    -
+        label: Set 4
+        value: "\"ss04\""
+    -
+        label: Set 5
+        value: "\"ss05\""
+    -
+        label: Set 6
+        value: "\"ss06\""
+    -
+        label: Set 7
+        value: "\"ss07\""
+    -
+        label: Set 8
+        value: "\"ss08\""
+    -
+        label: Set 9
+        value: "\"ss09\""
+    -
+        label: Set 10
+        value: "\"ss10\""
+    -
+        label: Set 11
+        value: "\"ss11\""
+    -
+        label: Set 12
+        value: "\"ss12\""
+    -
+        label: Set 13
+        value: "\"ss13\""
+    -
+        label: Set 14
+        value: "\"ss14\""
+    -
+        label: Set 15
+        value: "\"ss15\""
+    -
+        label: Set 16
+        value: "\"ss16\""
+    -
+        label: Set 17
+        value: "\"ss17\""
+    -
+        label: Set 18
+        value: "\"ss18\""
+    -
+        label: Set 19
+        value: "\"ss19\""
+    -
+        label: Set 20
+        value: "\"ss20\""
+
+
+
+
+
+
+
+
+
+
+
 # Colors
 -
     id: ets-colors-header
@@ -538,7 +787,7 @@ settings:
 -
     id: ets-highlight-color
     title: Highlight
-    type: variable-themed-color   
+    type: variable-themed-color
     format: 'hex'
     opacity: false
     default-light: '#887233'
@@ -547,7 +796,7 @@ settings:
 -
     id: ets-strikethrough-color
     title: Strikethrough
-    type: variable-themed-color   
+    type: variable-themed-color
     format: 'hex'
     opacity: false
     default-light: '#5A7D96'
@@ -556,11 +805,15 @@ settings:
 -
     id: ets-link-color
     title: Links
-    type: variable-themed-color   
+    type: variable-themed-color
     format: 'hex'
     opacity: false
     default-light: '#BE4190'
     default-dark: '#BE4190'
+
+
+
+
 
 # Other
 -
@@ -687,8 +940,15 @@ settings:
     --ets-highlight-vpadding-select: 0rem;
     --ets-highlight-radius-select: 0rem;
 
+    /*--ets-body-stylistic-sets-selection*/
+    /*--ets-header-stylistic-sets-selection*/
+    /*--ets-inline-title-stylistic-sets-selection*/
+
     
 }
+
+
+
 
 /* Body Text Styling */
 .markdown-preview-view p,
@@ -706,18 +966,23 @@ settings:
   line-height: var(--ets-leading-selection) !important;
 }
 
-/*Baseline Fix to avoid Headers*/
+/*Avoid Headers in Live Preview and Source View*/
 .markdown-preview-view :is(p, table, ul, ol, .callout-title-inner):not(:is(h1, h2, h3, h4, h5, h6)),
 .markdown-rendered :is(p, table, ul, ol, .callout-title-inner):not(:is(h1, h2, h3, h4, h5, h6)) {
   position: relative;
   top: var(--ets-body-baseline-selection);
+  font-feature-settings: var(--ets-body-stylistic-sets-selection) !important;
 }
 
 /* I don't know why it makes me separate this fuckin line */
+/*Avoid Headers in Reading Mode*/
 .markdown-source-view .cm-content > .cm-line:not([class*="header"]) {
   position: relative;
   top: var(--ets-body-baseline-selection);
+  font-feature-settings: var(--ets-body-stylistic-sets-selection) !important;
 }
+
+
 
 
 
@@ -734,6 +999,7 @@ settings:
   letter-spacing: var(--ets-inline-title-tracking-selection) !important;
   position: relative; !important;
   top: var(--ets-inline-title-baseline-selection); !important;
+  font-feature-settings: var(--ets-inline-title-stylistic-sets-selection) !important;
 }
 
 /* Header 1 */
@@ -749,6 +1015,7 @@ settings:
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
   top: var(--ets-header-baseline-selection); !important;
+  font-feature-settings: var(--ets-header-stylistic-sets-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h1,
@@ -771,6 +1038,7 @@ settings:
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
   top: var(--ets-header-baseline-selection); !important;
+  font-feature-settings: var(--ets-header-stylistic-sets-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h2,
@@ -793,6 +1061,7 @@ settings:
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
   top: var(--ets-header-baseline-selection); !important;
+  font-feature-settings: var(--ets-header-stylistic-sets-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h3,
@@ -815,6 +1084,7 @@ settings:
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
   top: var(--ets-header-baseline-selection); !important;
+  font-feature-settings: var(--ets-header-stylistic-sets-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h4,
@@ -837,6 +1107,7 @@ settings:
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
   top: var(--ets-header-baseline-selection); !important;
+  font-feature-settings: var(--ets-header-stylistic-sets-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h5,
@@ -859,6 +1130,7 @@ settings:
   line-height: var(--ets-leading-selection) !important;
   position: relative; !important;
   top: var(--ets-header-baseline-selection); !important;
+  font-feature-settings: var(--ets-header-stylistic-sets-selection) !important;
 }
 .ets-use-separate-header-toggle {
   .markdown-preview-view h6,
