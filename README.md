@@ -11,6 +11,7 @@ A new menu will appear in settings called Style Settings. All Extended Typograph
 
 
 ## Examples
+![](images/ETS-Settings-Example.png)
 ![](images/FaerieandFantasie.png)
 ![](images/SystemandStarlight.png)
 ![](images/MoonlightandMasquerades.png)
@@ -44,5 +45,7 @@ For best experience, ensure that all changes are made to both that YAML section 
 ## FAQ
 - **Can I use this in my-** Yes. Yes you can. The MIT Licenses permits you to basically do whatever you want with it. Just follow the rules in the License File. So if you want to rip all the code out and use it for another project, go ahead. Want to implement it into your theme? Go ahead.
 
-- **How can I support you and this project.** You can't. This is a personal project that I will probably forget about some day.
+- **How can I support you and this project?** You can't. This is a personal project that I will probably forget about some day.
+
+- **What theme are you using in your example images?** AnuPpuccin.
 
