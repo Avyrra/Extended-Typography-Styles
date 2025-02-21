@@ -9,7 +9,7 @@ Download **Extended Typography Styles.css**
 
 A new menu will appear in settings called Style Settings. All Extended Typography Parameters will then be accessible from that menu.
 
-
+## the .pings
 ![](images/ETS-Settings-Example.png)
 ![](images/FaerieandFantasie.png)
 ![](images/SystemandStarlight.png)
@@ -35,7 +35,7 @@ A new menu will appear in settings called Style Settings. All Extended Typograph
   - Link Underline Toggle
   - Highlight Appearance Settings
 
-## Note
+### Note
 Parameter defaults and limitations are set by me. If the limitations are too restrictive for your tastes, you can edit them via the css file.
 For best experience, ensure that all changes are made to both that YAML section and the CSS sections of the file.
 
