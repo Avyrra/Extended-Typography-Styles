@@ -851,6 +851,8 @@ settings:
     title: Disable Link Underline
     type: class-toggle
 
+
+## Highlight
 -
     id: ets-highlight-styling-header
     title: Highlight Styling
@@ -887,6 +889,61 @@ settings:
     min: 0
     max: 1
     step: 0.01
+
+
+
+## Rendering Method
+-
+    id: ets-rendering-header
+    title: Text Rendering
+    type: heading
+    level: 2
+    collapsed: true
+
+-
+    id: ets-rendering-selection
+    title: Rendering Method
+    type: variable-select
+    default: auto
+    options:
+    -
+        label: Auto
+        value: auto
+
+    -
+        label: Optimize for Speed
+        value: optimizeSpeed
+
+    -
+        label: Optimize for Legibility
+        value: optimizeLegibility
+
+    -
+        label: Geometric Precision
+        value: geometricPrecision
+
+-
+    id: ets-smoothing-selection
+    title: Smoothing Method
+    type: variable-select
+    default: auto
+    options:
+    -
+        label: Auto
+        value: auto
+
+    -
+        label: Antialiased
+        value: antialiased
+
+    -
+        label: Subpixel Antialiased
+        value: subpixel-antialiased
+
+    -
+        label: None
+        value: none
+
 
 */
 
@@ -967,7 +1024,9 @@ settings:
     /*--ets-header-stylistic-sets-selection*/
     /*--ets-inline-title-stylistic-sets-selection*/
 
-    
+    /*--ets-rendering-selection*/
+    /*--ets-smoothing-selection*/
+
 }
 
 
@@ -1352,4 +1411,13 @@ span.cm-highlight, mark {
 	padding-top: var(--ets-highlight-vpadding-select) !important;
 	padding-bottom: var(--ets-highlight-vpadding-select) !important;
 	border-radius: var(--ets-highlight-radius-select) !important;
+}
+
+
+
+
+/*RENDERING- Keep at bottom for safe keeping*/
+body {
+  text-rendering: var(--ets-rendering-selection) !important;
+  -webkit-font-smoothing: var(--ets-smoothing-selection) !important;
 }
