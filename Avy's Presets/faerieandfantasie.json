@@ -1,0 +1,18 @@
+{
+  "extended-typography-styles@@ets-body-font-selection": "Alegreya",
+  "extended-typography-styles@@ets-inline-title-font-selection": "Alegreya SC",
+  "extended-typography-styles@@ets-header-font-selection": "Alegreya SC",
+  "extended-typography-styles@@ets-body-weight-selection": 460,
+  "extended-typography-styles@@ets-header1-weight-selection": 450,
+  "extended-typography-styles@@ets-body-word-spacing-selection": 0.05,
+  "extended-typography-styles@@ets-inline-title-word-spacing-selection": 0.25,
+  "extended-typography-styles@@ets-header-word-spacing-selection": 0.25,
+  "extended-typography-styles@@ets-leading-selection": 1.8,
+  "extended-typography-styles@@ets-bold-color-decorations-toggle": true,
+  "extended-typography-styles@@ets-highlight-color-decorations-toggle": true,
+  "extended-typography-styles@@ets-bold-color@@dark": "#B44B70",
+  "extended-typography-styles@@ets-bold-color@@light": "#B44B70",
+  "extended-typography-styles@@ets-highlight-color@@light": "#F3DC9C",
+  "extended-typography-styles@@ets-disable-link-underline-select": true,
+  "extended-typography-styles@@ets-highlight-hpadding-select": 0.25
+}
