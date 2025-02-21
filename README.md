@@ -34,6 +34,9 @@ A new menu will appear in settings called Style Settings. All Extended Typograph
 - **Additional options:** Maybe I'll sort them, maybe I won't
   - Link Underline Toggle
   - Highlight Appearance Settings
+  - Text Rendering
+    - Rendering Method: Auto, Optimize for Speed, Optimize for Legibility, and Geometric Precision. Noticable effect with some fonts. Less noticable with others.
+    - Smoothing Method: Tends to get filtered through your OS renderer. Saw extremely minor changes with windows. Zero changes with linux. Have not yet tested with Mac, or Mobile Devices
 
 ### Note
 Parameter defaults and limitations are set by me. If the limitations are too restrictive for your tastes, you can edit them via the css file.
