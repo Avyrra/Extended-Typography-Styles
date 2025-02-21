@@ -5,6 +5,7 @@ Allows more control of typography styles in Obsidian when using the Style Settin
 Download **Extended Typography Styles.css**
 - Open your Obsidian Vaults snippet folder. This folder can be accessed by clicking the folder icon at the bottom of the appearance menu or by navigating to vaultname/.obsidian/snippets
 - Move **Extended Typography Styles.css** to the snippets folder.
+- In Obsidian, open settings. Naviagate to Appearance and scroll down to the css section. Enable Extended Typography Styles.
 - Install and Enable Style Settings via Community Plugins > Browse > Search: Style Settings
 
 A new menu will appear in settings called Style Settings. All Extended Typography Parameters will then be accessible from that menu.
