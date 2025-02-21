@@ -10,7 +10,6 @@ Download **Extended Typography Styles.css**
 A new menu will appear in settings called Style Settings. All Extended Typography Parameters will then be accessible from that menu.
 
 
-## Examples
 ![](images/ETS-Settings-Example.png)
 ![](images/FaerieandFantasie.png)
 ![](images/SystemandStarlight.png)
