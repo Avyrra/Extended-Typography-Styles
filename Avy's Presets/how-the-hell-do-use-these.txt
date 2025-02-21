@@ -1,0 +1,6 @@
+1. Open Style Settings
+2. Reset Extended Typography Styles (recommended, but not neccessary)
+3. Import template.json
+4. Profit
+
+Note: Some of these presets were only tweaked enough to look good for the screenshots. You may need to fill out the rest of the numbers for all the headers.
