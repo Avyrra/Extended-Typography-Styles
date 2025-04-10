@@ -46,6 +46,9 @@ Parameter defaults and limitations are set by me. If the limitations are too res
 For best experience, ensure that all changes are made to both that YAML section and the CSS sections of the file.
 
 
+## Updates!
+04/09/2025 - Added Workspace Editor Snippet. Allows you to edit your workspace width and a align it left while maintaining the width.
+
 
 ## FAQ
 - **Can I use this in my-** Yes. Yes you can. The MIT Licenses permits you to basically do whatever you want with it. Just follow the rules in the License File. So if you want to rip all the code out and use it for another project, go ahead. Want to implement it into your theme? Go ahead.
