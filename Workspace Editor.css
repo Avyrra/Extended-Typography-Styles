@@ -1,0 +1,54 @@
+/* @settings
+name: Edit Workspace
+id: edit-workspace
+settings:
+
+-
+    id: ew-info
+    title: Information
+    description: "Disable **Readable Line Length** in Editor Options Menu"
+    type: info-text
+    markdown: true
+
+-
+    id: ew-width
+    title: Width
+    type: variable-number
+    default: 700
+    format: px
+
+-
+    id: ew-align-left
+    title: Align Left
+    type: class-toggle
+    default: false
+
+*/
+
+:root {
+  --ew-width: 700px;
+}
+
+
+/*Reading Mode*/
+.markdown-preview-view .markdown-preview-sizer {
+  max-width: var(--ew-width) !important;
+  margin: 0 auto !important;
+}
+
+/*Live Preview and Source*/
+.markdown-rendered,
+.markdown-source-view,
+.markdown-source-view.is-live-preview {
+  max-width: var(--ew-width) !important;
+  margin: 0 auto !important;
+}
+
+
+/*Align Left*/
+.ew-align-left .markdown-preview-view .markdown-preview-sizer,
+.ew-align-left .markdown-rendered,
+.ew-align-left .markdown-source-view,
+.ew-align-left .markdown-source-view.is-live-preview {
+  margin: 0 !important;
+}
