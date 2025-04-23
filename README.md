@@ -54,6 +54,7 @@ For best experience, ensure that all changes are made to both that YAML section 
 
 ## Updates!
 04/09/2025 - Added Workspace Editor Snippet. Allows you to edit your workspace width and a align it left while maintaining the width.
+04/23/2025 - Added Table Styles Snippet. Allows you to format various aspects of tables.
 
 
 ## FAQ
