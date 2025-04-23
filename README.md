@@ -12,6 +12,12 @@ Download **Extended Typography Styles.css**
 
 A new menu will appear in settings called Style Settings. All Extended Typography Parameters will then be accessible from that menu.
 
+### OPTIONALLY
+Download **Workspace Editor** and **Table Styles** and move them into your snippets folder.
+
+**Workspace Editor** allows you to adjust the width of your workspace and align it left while maintaining the margin.
+**Table Styles** allows you to make formatting changes to your tables including centering the table, the width, rounded corners, and borderless tables.
+
 ## the .pings
 ![](images/ETS-Settings-Example.png)
 ![](images/FaerieandFantasie.png)
