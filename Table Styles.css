@@ -1,0 +1,174 @@
+/* @settings
+name: Table Styles
+id: table-styles
+settings:
+
+-
+    id: ts-center-table
+    title: Center Table
+    type: class-toggle
+    default: false
+
+-
+    id: ts-fixed-width-header
+    title: Fixed Width
+    type: heading
+    level: 1
+    collapsed: true
+
+-
+    id: ts-use-fixed-width
+    title: Use Fixed Width
+    type: class-toggle
+    default: false
+
+-
+    id: ts-width-scalar
+    title: Width Scalar
+    type: variable-number-slider
+    default: 100
+    min: 50
+    max: 100
+    step: 1
+
+-
+    id: ts-round-corners
+    title: Round Corners
+    type: heading
+    level: 1
+    collapsed: true
+
+-
+    id: ts-use-round-corners
+    title: Use Round Corners
+    type: class-toggle
+    default: false
+
+-
+    id: ts-round-corner-radius
+    title: Round Corner Radius
+    type: variable-number
+    default: 10
+    format: px
+
+-
+    id: ts-borderless
+    title: Borderless
+    type: heading
+    level: 1
+    collapsed: true
+
+-
+    id: ts-borderless-infotext
+    title: Information
+    description: "Borderless tables might make it difficult to edit. For this reason, you can toggle **Live Preview** and **Reading Mode** separately."
+    type: info-text
+    markdown: true
+
+-
+    id: ts-use-borderless-livepreview
+    title: Use Borderless Table in Live Preview
+    type: class-toggle
+    default: false
+
+-
+    id: ts-use-borderless-reading
+    title: Use Borderless Table in Reading Mode
+    type: class-toggle
+    default: false
+*/
+
+
+/* Fixed Width */
+.ts-use-fixed-width {
+    .workspace-leaf-content.is-readable-line-width .markdown-preview-sizer,
+    .max-width div:has(table),
+    .markdown-preview-view table,
+    .markdown-source-view.mod-cm6 .cm-table-widget > .table-wrapper,
+    .cm-table-widget > .table-wrapper > table {
+        width: calc(var(--ts-width-scalar) * 1%) !important;
+        max-width: calc(var(--ts-width-scalar) * 1%) !important;
+    }
+}
+
+.ts-use-fixed-width {
+    .markdown-preview-view table,
+    .cm-table-widget > .table-wrapper > table {
+        table-layout: fixed !important;
+    }
+}
+
+/* Round Corners - Courtesy to FireIsGood for this Round Corners method*/
+:root table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Add the radius */
+.ts-use-round-corners {
+    th:first-child {border-top-left-radius: var(--ts-round-corner-radius)}
+    th:last-child {border-top-right-radius: var(--ts-round-corner-radius)}
+    tr:last-child td:first-child {border-bottom-left-radius: var(--ts-round-corner-radius)}
+    tr:last-child td:last-child {border-bottom-right-radius: var(--ts-round-corner-radius)}
+}
+
+/* Redo the borders */
+:root :is(td, th) {
+  border-width: 0 var(--table-border-width) var(--table-border-width) 0;
+}
+
+
+/* Center Table */
+.ts-center-table {
+    .table-wrapper,
+    .markdown-preview-view table,
+    .markdown-source-view.is-live-preview table {
+    margin-inline: auto;
+    }
+}
+
+
+/* Borderless Table */
+
+/*Live Preview*/
+.ts-use-borderless-livepreview {
+    .markdown-source-view.is-live-preview {
+        --table-border-width: 0px;
+        --table-row-border-width: 0px;
+        --table-column-border-width: 0px;
+        --table-header-border-width: 0px;
+        --table-column-first-border-width: 0px;
+        --table-column-last-border-width: 0px;
+        --table-row-last-border-width: 0px;
+    }
+
+    .markdown-source-view.is-live-preview table {
+        border-collapse: collapse;
+    }
+
+    .markdown-source-view.is-live-preview th,
+    .markdown-source-view.is-live-preview td {
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
+/* Reading Mode */
+.ts-use-borderless-reading {
+    .markdown-preview-view table {
+        --table-border-width: 0px;
+        --table-row-border-width: 0px;
+        --table-column-border-width: 0px;
+        --table-header-border-width: 0px;
+        --table-column-first-border-width: 0px;
+        --table-column-last-border-width: 0px;
+        --table-row-last-border-width: 0px;
+        border-collapse: collapse;
+    }
+    .markdown-preview-view th,
+    .markdown-preview-view td {
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
