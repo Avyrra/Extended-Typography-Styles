@@ -1414,6 +1414,12 @@ span.cm-highlight, mark {
 }
 
 
+/*CALLOUT FIX: 5-22-25*/
+/* Override for callout titles to match body bold weight */
+.markdown-preview-view .callout-title-inner,
+.markdown-rendered .callout-title-inner {
+  font-weight: var(--ets-body-bold-weight-selection) !important;
+}
 
 
 /*RENDERING- Keep at bottom for safe keeping*/
